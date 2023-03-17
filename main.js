@@ -1,14 +1,13 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+let btn = document.getElementById("accordion");
+btn.addEventListener("click", function () {
+  let panel = document.getElementById("panel");
+  panel.style.transition = "height 2s";
+  panel.style.height = "10rem";
+});
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
+btn.addEventListener("focusout", function () {
+  let panel = document.getElementById("panel");
+  panel.style.transition = "height 0.6s";
+  panel.style.height = 0;
+});
+//question , why cant classname work for dom

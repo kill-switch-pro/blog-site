@@ -103,3 +103,5 @@ As their time in the past drew to a close, Alex and Emily knew they had made a r
 From that day on, they continued to be avid readers and explorers, always curious about the world around them and eager to learn from the past. They knew that even the smallest actions could have a profound impact on the future, and they were determined to make a difference in whatever way they could.
 
 ---
+
+note , u cant style with percentage
