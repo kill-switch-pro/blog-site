@@ -1,18 +1,100 @@
-#accordion {
-  height: 3rem;
-  width: 3rem;
-  background-color: aqua;
-  border-radius: 100%;
-  position: absolute;
-  bottom: 20px;
-  right: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-#panel {
+body,
+html {
+  background-color: black;
+  color: #fff;
+  height: 100%;
+}
+
+#open-menu {
+  height: 3rem;
+  width: 3rem;
+  background-color: rgb(81, 81, 85);
+  border-radius: 100%;
+  position: absolute;
+  bottom: 2px;
+  right: 40px;
+  border: 2px solid #0000ff;
+  padding-top: 40px;
+}
+
+#menu-panel {
   height: 0;
   overflow-y: auto;
   margin-right: 15px;
-  position: absolute;
-  bottom: 14px;
-  right: 0;
+  position: fixed;
+  bottom: 3px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button#close-menu {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  background-color: rgb(14, 207, 69);
+  margin-right: 30px;
+  border: none;
+}
+
+#page-footer {
+  position: fixed;
+  bottom: 0;
+  background-color: gray;
+  width: 100%;
+  height: 3rem;
+  border-top: 4px double #0000ff;
+}
+
+#post-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#new-post,
+#tech-post,
+#diy-post,
+#forum-post {
+  height: 15rem;
+  width: 20%;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  border-radius: 6px;
+  box-shadow: -2px -2px 2px #0000ff, 2px 3px 2px #1515f1;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+img:hover {
+  opacity: 0.3;
+}
+
+/*
+#new-post:hover,
+#tech-post:hover,
+#diy-post:hover {
+  height: 15rem;
+  width: 20%;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  border-radius: 6px;
+  box-shadow: -2px -7px 3px #0000ff, 2px 3px 3px #1515f1;
+}*/
+
+#page-intro {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#page-content {
+  margin-left: 1rem;
 }
