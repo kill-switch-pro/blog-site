@@ -4,7 +4,7 @@ let welcome = document.getElementById("welcome-message");
 btnShow.addEventListener("click", function () {
   let panel = document.getElementById("menu-panel");
   panel.style.transition = "height 2s";
-  panel.style.height = "15rem";
+  panel.style.height = "20rem";
   btnShow.style.display = "none";
 });
 /*

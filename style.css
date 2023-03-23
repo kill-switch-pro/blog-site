@@ -53,6 +53,7 @@ button#close-menu {
   border-top: 4px double #0000ff;
 }
 
+#new-post,
 #post-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +62,8 @@ button#close-menu {
 #new-post,
 #tech-post,
 #diy-post,
-#forum-post {
+#forum-post,
+#post {
   height: 15rem;
   width: 20%;
   margin-left: 1rem;
@@ -97,4 +99,8 @@ img:hover {
 
 #page-content {
   margin-left: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
