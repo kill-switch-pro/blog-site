@@ -54,7 +54,8 @@ button#close-menu {
 }
 
 #new-post,
-#post-gallery {
+#post-gallery,
+#tech-topics {
   display: flex;
   flex-wrap: wrap;
 }
@@ -72,11 +73,11 @@ button#close-menu {
   box-shadow: -2px -2px 2px #0000ff, 2px 3px 2px #1515f1;
 }
 
-img {
+img#hoverable {
   height: 100%;
   width: 100%;
 }
-img:hover {
+img#hoverable:hover {
   opacity: 0.3;
 }
 
@@ -103,4 +104,23 @@ img:hover {
 
 a {
   text-decoration: none;
+}
+
+#tech-topics-post {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#tech-topics-post div {
+  height: 3rem;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: -2px -2px 2px #0000ff, 2px 3px 2px #1515f1;
+  margin-top: 1rem;
+}
+
+div#TTP {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
 }
